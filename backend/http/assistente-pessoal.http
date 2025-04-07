@@ -1,7 +1,18 @@
-POST https://suporteportfoliosmailey.app.n8n.cloud/webhook/assistente-pessoal
+# POST https://suporteportfoliosmailey.app.n8n.cloud/webhook/assistente-pessoal
+# Content-Type: application/json
+
+# {
+#   "chatId": "123456",
+#   "message": "Bom dia! O Smailey tem alguma experiência com PHP?"
+# }
+
+###
+POST http://localhost:4000/assistente
 Content-Type: application/json
 
 {
-  "chatId": "123456",
-  "message": "Bom dia! O Smailey tem alguma experiência com PHP?"
+  "id": "123456",
+  "texto": "Como você sabe com quais tecnologias o Smailey já trabalhou?",
+  "autor": "Usuário",
+	"lado": "direito"
 }
